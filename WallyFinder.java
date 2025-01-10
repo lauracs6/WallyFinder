@@ -2,7 +2,7 @@ public class WallyFinder {
 
   public static int wheresWally(String str) {
     for (int i = 0; i < str.length(); i++) {
-        if (str.charAt(i) == 'W') { // Verificar si el carácter es 'W'            
+        if (str.charAt(i) == 'W') {            
             if (i + 5 <= str.length() && str.substring(i, i + 5).equals("Wally")) {
               if (i == 0 || str.charAt(i - 1) == ' ') {
                 if (i + 5 == str.length() || str.charAt(i + 5) == ' ' || str.charAt(i + 5) == '.' || str.charAt(i + 5) =='\'') {
